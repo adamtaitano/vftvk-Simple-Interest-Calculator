@@ -5,9 +5,20 @@ function compute() {
   var years = document.getElementById("years").value;
   var interest = (principal * rate / 100) * years;
   var year = new Date().getFullYear() + parseInt(years);
-  var result = "\n If you deposit " + principal + ",\n at an interest rate of " + rate + "%. \n You will receive an amount of " + interest + ", \n in the year " + year + "\n\n";
-  if (validate(principal))
-    document.getElementById("result").innerText=result;
+  var first = "If you deposit";
+  var second = ",\n at an interest rate of ";
+  var third = "\n You will receive an amount of ";
+  var fourth = ",\n in the year";
+  if (validate(principal)) {
+    document.getElementById("deposit").innerText=first;
+    document.getElementById("deposit-amt").innerText=principal;
+    document.getElementById("interest").innerText=second;
+    document.getElementById("interest-amt").innerText=rate+"%.";
+    document.getElementById("amount").innerText=third;
+    document.getElementById("amount-amt").innerText=interest;
+    document.getElementById("year").innerText=fourth;
+    document.getElementById("year-amt").innerText=year;
+  }
 }
 
 function updateRate() {
