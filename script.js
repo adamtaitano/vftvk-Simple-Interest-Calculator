@@ -18,6 +18,7 @@ function updateRate() {
 function validate(number) {
   if (number <= 0) {
     alert("Enter a positive number.");
+    document.getElementById("principal").focus();
     return false;
   }
   else
