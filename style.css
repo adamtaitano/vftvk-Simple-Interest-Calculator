@@ -6,7 +6,8 @@ body {
 
 h1 {
   color: grey;
-  font-family: verdana
+  font-family: verdana;
+  text-align: center
 }
 
 .maindiv {
@@ -15,7 +16,8 @@ h1 {
   width: 300px;
   padding: 20px;
   border-radius: 25px;
-  align: center
+  align: center;
+  text-align: left
 }
 
 /* #deposit-amt {}
